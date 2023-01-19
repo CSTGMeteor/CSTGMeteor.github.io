@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="http://example.com/2023/01/09/ubuntu配置（一）/"/>
+  <link rel="canonical" href="http://example.com/2023/01/19/ubuntu配置（六）/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,19 +32,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>ubuntu配置（一） - Meteor Blog</title>
+  <title>ubuntu配置（六） - Meteor Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="个人博客 - Meteor - Meteor Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="ubuntu配置（一）">
-<meta property="og:url" content="http://example.com/2023/01/09/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
+<meta property="og:title" content="ubuntu配置（六）">
+<meta property="og:url" content="http://example.com/2023/01/19/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E5%85%AD%EF%BC%89/index.html">
 <meta property="og:site_name" content="Meteor Blog">
-<meta property="og:description" content="目录：    1. Jetson Nano连接笔记本网络     2. 系统设置中文    3. Ubuntu更改用户名与密码    4. WinSCP文件传输码    5.Ubuntu换源    6.Jetson Nano扩容    1. Jetson Nano连接笔记本网络设置中点开“网络和Internet”，选择更改适配器选项  点击所连接无线网络的属性  点开共享标签，全部勾上  重启笔记">
+<meta property="og:description" content="目录：    1. 配置yolov5     2. 上传镜像    1. 配置yolov5进入yolov5官网https:&#x2F;&#x2F;github.com&#x2F;ultralytics&#x2F;yolov5 可以在tag选择版本  点击zip下载  将yolov5文件夹放入容器内，根据requirements.txt安装环境 安装libpng apt-get install libpng-dev  安装freetype">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-01-09T10:53:31.974Z">
-<meta property="article:modified_time" content="2023-01-18T06:29:25.764Z">
+<meta property="article:published_time" content="2023-01-19T09:14:01.491Z">
+<meta property="article:modified_time" content="2023-01-19T09:13:33.517Z">
 <meta property="article:author" content="Meteor">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2437,7 +2437,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/09/ubuntu配置（一）/">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/01/19/ubuntu配置（六）/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Meteor Blog">
   </span>
@@ -2458,7 +2458,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        ubuntu配置（一）
+        ubuntu配置（六）
       </h1>
       <div class='new-meta-box'>
         
@@ -2489,10 +2489,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-01-09T18:53:31+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-01-19T17:14:01+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jan 9, 2023</p>
+    <p>发布于：Jan 19, 2023</p>
   </a>
 </div>
 
@@ -2511,120 +2511,56 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <h3 id="目录："><a href="#目录：" class="headerlink" title="目录： "></a><font size=5><strong>目录：</strong> </font></h3><table>
 <thead>
 <tr>
-<th align="left"><strong>1. Jetson Nano连接笔记本网络</strong></th>
+<th align="left"><strong>1. 配置yolov5</strong></th>
 <th></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><strong>2. 系统设置中文</strong></td>
-<td></td>
-</tr>
-<tr>
-<td align="left"><strong>3. Ubuntu更改用户名与密码</strong></td>
-<td></td>
-</tr>
-<tr>
-<td align="left"><strong>4. WinSCP文件传输码</strong></td>
-<td></td>
-</tr>
-<tr>
-<td align="left"><strong>5.Ubuntu换源</strong></td>
-<td></td>
-</tr>
-<tr>
-<td align="left"><strong>6.Jetson Nano扩容</strong></td>
+<td align="left"><strong>2. 上传镜像</strong></td>
 <td></td>
 </tr>
 </tbody></table>
-<h4 id="1-Jetson-Nano连接笔记本网络"><a href="#1-Jetson-Nano连接笔记本网络" class="headerlink" title="1. Jetson Nano连接笔记本网络"></a><font size=6>1. <strong>Jetson Nano连接笔记本网络</strong></font></h4><p>设置中点开“网络和Internet”，选择更改适配器选项</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091114683.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091114683.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>点击所连接无线网络的属性</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091114683.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091114683.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>点开共享标签，全部勾上</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091114685.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091114685.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>重启笔记本后可能要取消勾后再勾一次</p>
-<h4 id="2-系统设置中文"><a href="#2-系统设置中文" class="headerlink" title="2. 系统设置中文"></a><font size=6>2. <strong>系统设置中文</strong></font></h4><p>点击language support</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091112014.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091112014.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>会提示安装语言库，点击install</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091114682.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091114682.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>把汉语（中国）移到最上面</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091112624.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091112624.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>重启系统</p>
-<h4 id="3-Ubuntu更改用户名与密码"><a href="#3-Ubuntu更改用户名与密码" class="headerlink" title="3. Ubuntu更改用户名与密码"></a><font size=6><strong>3. Ubuntu更改用户名与密码</strong></font></h4><p>打开终端进入根用户（ctrl+d退出根用户）</p>
-<pre><code>sudo su
+<h4 id="1-配置yolov5"><a href="#1-配置yolov5" class="headerlink" title="1. 配置yolov5"></a><font size=6><strong>1. 配置yolov5</strong></font></h4><p>进入yolov5官网<em><a target="_blank" rel="noopener" href="https://github.com/ultralytics/yolov5">https://github.com/ultralytics/yolov5</a></em></p>
+<p>可以在<em>tag</em>选择版本</p>
+<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301191154928.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301191154928.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
+<p>点击<em>zip</em>下载</p>
+<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301191156325.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301191156325.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
+<p>将yolov5文件夹放入容器内，根据<em>requirements.txt</em>安装环境</p>
+<p>安装libpng</p>
+<pre><code>apt-get install libpng-dev
 </code></pre>
-<p>更改根用户密码</p>
-<pre><code>passwd  root
+<p>安装freetype</p>
+<pre><code>wget http://download.savannah.gnu.org/releases/freetype/freetype-2.7.1.tar.gz
+tar -zxvf freetype-2.7.1.tar.gz
+cd freetype-2.7.1/
+./configure
+make
+make install
 </code></pre>
-<p>更改用户密码</p>
-<pre><code>passwd nvidia
+<p>通过豆瓣源安装matplotlib&gt;&#x3D;3.2.2</p>
+<pre><code>pip3 install -i http://pypi.douban.com/simple/ --trusted-host=pypi.douban.com/simple matplotlib==3.2.2#
 </code></pre>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446283.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446283.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>在根用户下继续输入</p>
-<pre><code>gedit /etc/passwd
+<p>安装其他环境</p>
+<pre><code>pip3 install opencv-python==4.3.0.38
+pip3 install PyYAML==5.3.1 --ignore-installed
+pip3 install tqdm==4.41.0
+pip3 install seaborn==0.11.0
+pip3 install thop
 </code></pre>
-<p>将文件最下面一行的旧用户名改为新用户名，只改前两个</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446284.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446284.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>修改shadow</p>
-<pre><code>gedit /etc/shadow
+<p>进入utils文件夹更改plots.py进行更改</p>
+<pre><code>class Annotator:
+    #if RANK in (-1, 0):
+        #check_font()  # download TTF if necessary
+    # YOLOv5 Annotator for train/val mosaics and jpgs and detect/hub inference annotations
+    def __init__(self, im, line_width=None, font_size=None, font=&#39;&#39;, pil=False, example=&#39;abc&#39;):
 </code></pre>
-<p>将文件最下面一行的旧用户名改为新用户名，只有一个</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446285.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446285.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>修改用户权限列表</p>
-<pre><code>gedit /etc/sudoers
+<p>测试yolov5</p>
+<p>进入yolov5文件夹运行detect.py</p>
+<pre><code>python3 detect.py
 </code></pre>
-<p>添加权限</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446286.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446286.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>修改用户群组</p>
-<pre><code>gedit /etc/group
+<h4 id="2-上传镜像"><a href="#2-上传镜像" class="headerlink" title="2. 上传镜像"></a><font size=6>2. <strong>上传镜像</strong></font></h4><p>将容器上传为镜像</p>
+<pre><code>docker commit -a &quot;作者名称&quot; -m &quot;备注&quot; 容器ID  上传镜像名:上传镜像标签 
 </code></pre>
-<p>将文件中旧用户名全改为新用户名</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446287.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446287.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>重启</p>
-<p>修改主目录</p>
-<pre><code>cd /home
-sudo  mv /home/inano /home/U-car
-sudo vi /etc/passwd
-</code></pre>
-<p>按o进入编辑模式，在最下面修改目录</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446289.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091446289.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>esc退出编辑模式，输入:w保存，输入:q退出</p>
-<p>重启</p>
-<h4 id="4-WinSCP文件传输"><a href="#4-WinSCP文件传输" class="headerlink" title="4.WinSCP文件传输"></a><font size=6><strong>4.WinSCP文件传输</strong></font></h4><p>WinSCP官网下载安装 <em><a target="_blank" rel="noopener" href="https://winscp.net/eng/download.php">https://winscp.net/eng/download.php</a></em></p>
-<p>查看nano IP地址</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091503028.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091503028.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091503029.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091503029.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>打开WinSCP，新建站点，输入IP地址，用户名密码为之前设置的，点击登录</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091503030.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091503030.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>可以直接传输文件</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091503031.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091503031.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<h4 id="5-Ubuntu换源"><a href="#5-Ubuntu换源" class="headerlink" title="5.Ubuntu换源"></a><font size=6><strong>5.Ubuntu换源</strong></font></h4><p>终端输入</p>
-<pre><code>sudo gedit /etc/apt/sources.list
-</code></pre>
-<p>打开文件后删除原内容更换为</p>
-<pre><code>deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic main multiverse restricted universe
-deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-security main multiverse restricted universe
-deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-updates main multiverse restricted universe
-deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-backports main multiverse restricted universe
-deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic main multiverse restricted universe
-deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-security main multiverse restricted universe
-deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-updates main multiverse restricted universe
-deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ bionic-backports main multiverse restricted universe
-</code></pre>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091534421.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091534421.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>更新源</p>
-<pre><code>sudo apt-get update
-</code></pre>
-<h4 id="6-Jetson-Nano扩容"><a href="#6-Jetson-Nano扩容" class="headerlink" title="6.Jetson Nano扩容"></a><font size=6><strong>6.Jetson Nano扩容</strong></font></h4><p>Jetson Nano烧录镜像后容量会变小，需要进行扩容</p>
-<p>打开目录*&#x2F;usr&#x2F;lib&#x2F;nvidia&#x2F;resizefs*</p>
-<p>在目录下打开终端</p>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091723494.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091723494.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
-<p>输入</p>
-<pre><code>sudo su
-chmod +x nvresizefs.sh
-./nvresizefs.sh
-</code></pre>
-<p><img src="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091723495.png" class="lazyload" data-srcset="https://meteorpicgo.oss-cn-hangzhou.aliyuncs.com/image/202301091723495.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片"></p>
 
   </div>
   
@@ -2649,10 +2585,10 @@ chmod +x nvresizefs.sh
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-01-18T14:29:25+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-01-19T17:13:33+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jan 18, 2023</p>
+    <p>更新于：Jan 19, 2023</p>
   </a>
 </div>
 
@@ -2666,7 +2602,7 @@ chmod +x nvresizefs.sh
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/01/09/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/&title=ubuntu配置（一） - Meteor Blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2023/01/19/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E5%85%AD%EF%BC%89/&title=ubuntu配置（六） - Meteor Blog&summary="
           
           >
           
@@ -2678,7 +2614,7 @@ chmod +x nvresizefs.sh
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/01/09/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/&title=ubuntu配置（一） - Meteor Blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2023/01/19/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E5%85%AD%EF%BC%89/&title=ubuntu配置（六） - Meteor Blog&summary="
           
           >
           
@@ -2690,7 +2626,7 @@ chmod +x nvresizefs.sh
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/01/09/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/&title=ubuntu配置（一） - Meteor Blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2023/01/19/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E5%85%AD%EF%BC%89/&title=ubuntu配置（六） - Meteor Blog&summary="
           
           >
           
@@ -2723,53 +2659,27 @@ chmod +x nvresizefs.sh
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/01/10/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%EF%BC%89/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>ubuntu配置（二）</p>
+      
+        <a class='next' href='/2023/01/16/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%BA%94%EF%BC%89/'>
+          <p class='title'>ubuntu配置（五）<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>目录： 
 
 
-1. 安装MobaXterm连接Jetson Nano
+1. 安装jetson-inference
 
 
 
 
-2. 安装docker
+2. 在ros_workspace中编译
 
 
 
-3. 安装NVIDIA L4T ML镜像
+3. 更改主机名
 
 
 
-1. 安装MobaXterm连接Jet...</p>
-        </a>
-      
-      
-        <a class='next' href='/2023/01/08/Pyhton%E5%AE%89%E8%A3%85/'>
-          <p class='title'>Pyhton安装<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>
-
-目录： 
-
-
-1. Python介绍
-
-
-
-
-2. python安装
-
-
-
-3. NumPy入门
-
-
-
-4. 集成开发环境介绍
-
-
-
-1. Python介绍：Python由荷兰数学和计算机科...</p>
+1. 安装jetson-inference从官网下载
+g...</p>
         </a>
       
     </div>
@@ -2785,7 +2695,7 @@ chmod +x nvresizefs.sh
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2023/01/09/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/01/19/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E5%85%AD%EF%BC%89/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2827,7 +2737,7 @@ chmod +x nvresizefs.sh
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%EF%BC%9A"><span class="toc-text">目录： </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-Jetson-Nano%E8%BF%9E%E6%8E%A5%E7%AC%94%E8%AE%B0%E6%9C%AC%E7%BD%91%E7%BB%9C"><span class="toc-text">1. Jetson Nano连接笔记本网络</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E4%B8%AD%E6%96%87"><span class="toc-text">2. 系统设置中文</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Ubuntu%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%8E%E5%AF%86%E7%A0%81"><span class="toc-text">3. Ubuntu更改用户名与密码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-WinSCP%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93"><span class="toc-text">4.WinSCP文件传输</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-Ubuntu%E6%8D%A2%E6%BA%90"><span class="toc-text">5.Ubuntu换源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-Jetson-Nano%E6%89%A9%E5%AE%B9"><span class="toc-text">6.Jetson Nano扩容</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95%EF%BC%9A"><span class="toc-text">目录： </span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%85%8D%E7%BD%AEyolov5"><span class="toc-text">1. 配置yolov5</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E4%B8%8A%E4%BC%A0%E9%95%9C%E5%83%8F"><span class="toc-text">2. 上传镜像</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3504,7 +3414,7 @@ chmod +x nvresizefs.sh
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Meteor Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Meteor","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Meteor Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Ubuntu/","name":"Ubuntu"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/01/09/ubuntu配置（一）/","name":"ubuntu配置（一）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Meteor Blog","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"Meteor","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"Meteor Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"ubuntu配置（一）","description":"个人博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/01/09/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/"},"author":{"@type":"Person","name":"Meteor","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Meteor Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/01/09/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E4%B8%80%EF%BC%89/","wordCount":0,"datePublished":"2023-01-09T10:53:31.974Z","dateModified":"2023-01-18T06:29:25.764Z","articleSection":"Ubuntu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Meteor Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Meteor","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Meteor Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Ubuntu/","name":"Ubuntu"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2023/01/19/ubuntu配置（六）/","name":"ubuntu配置（六）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Meteor Blog","url":"http://example.com/","keywords":null,"description":"个人博客","author":{"@type":"Person","name":"Meteor","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"个人博客"},"publisher":{"@type":"Organization","name":"Meteor Blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"ubuntu配置（六）","description":"个人博客","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/01/19/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E5%85%AD%EF%BC%89/"},"author":{"@type":"Person","name":"Meteor","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Meteor Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2023/01/19/ubuntu%E9%85%8D%E7%BD%AE%EF%BC%88%E5%85%AD%EF%BC%89/","wordCount":0,"datePublished":"2023-01-19T09:14:01.491Z","dateModified":"2023-01-19T09:13:33.517Z","articleSection":"Ubuntu","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
